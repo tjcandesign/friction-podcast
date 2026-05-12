@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Friction Podcast — Brand Foundation</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --black: #0a0a0a;
+  --dark: #111111;
+  --dark-card: #161616;
+  --dark-border: #222222;
+  --white: #fafafa;
+  --gray-100: #e5e5e5;
+  --gray-300: #a3a3a3;
+  --gray-500: #737373;
+  --gray-700: #404040;
+  --yellow: #E8FF00;
+  --yellow-dim: rgba(232, 255, 0, 0.08);
+  --yellow-glow: rgba(232, 255, 0, 0.25);
+  --red: #FF3B30;
+  --green: #30D158;
+  --blue: #64D2FF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--black);
+  color: var(--gray-100);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === LAYOUT === */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+section {
+  padding: 100px 0;
+  border-bottom: 1px solid var(--dark-border);
+}
+section:last-of-type { border-bottom: none; }
+
+/* === NAV === */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10,10,10,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--dark-border);
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+}
+.nav-brand {
+  font-weight: 800; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--yellow);
+}
+.nav-links { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a {
+  font-size: 0.7rem; font-weight: 500;
+  color: var(--gray-500); text-decoration: none;
+  padding: 6px 12px; border-radius: 6px;
+  white-space: nowrap; transition: all 0.2s;
+}
+.nav-links a:hover { color: var(--white); background: var(--dark-card); }
+
+/* === HERO === */
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  border-bottom: 1px solid var(--dark-border);
+}
+.hero-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--yellow-glow) 0%, transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: pulse 8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.1); }
+}
+.hero-bolt {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.04;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center; padding: 40px 24px;
+}
+.hero-parent {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem; font-weight: 400;
+  color: var(--gray-500);
+  text-transform: uppercase; letter-spacing: 0.2em;
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 900;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+.hero h1 span {
+  display: block;
+  color: var(--yellow);
+  text-shadow: 0 0 60px var(--yellow-glow);
+}
+.hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 300;
+  color: var(--gray-300);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  line-height: 1.5;
+}
+.hero-meta {
+  display: flex; gap: 32px; justify-content: center; flex-wrap: wrap;
+}
+.hero-meta-item {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.hero-meta-item strong { color: var(--gray-300); }
+
+/* === SECTION HEADERS === */
+.sec-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.sec-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+.sec-desc {
+  font-size: 1.05rem;
+  color: var(--gray-500);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* === PHILOSOPHY === */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+.philosophy-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 32px;
+}
+.philosophy-card.highlight {
+  border-color: var(--yellow);
+  background: var(--yellow-dim);
+  grid-column: 1 / -1;
+}
+.philosophy-card.highlight .phil-quote {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.35;
+}
+.phil-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+.phil-text {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.7;
+}
+
+/* === ARCHITECTURE === */
+.arch-diagram {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+.arch-node {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 24px 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  transition: all 0.2s;
+}
+.arch-node.parent {
+  border-color: var(--gray-700);
+}
+.arch-node.primary {
+  border-color: var(--yellow);
+  background: var(--yellow-dim);
+}
+.arch-node-name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.arch-node-type {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+.arch-connector {
+  width: 2px; height: 32px;
+  background: var(--dark-border);
+}
+.arch-details {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.arch-detail {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.arch-detail-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.arch-detail-value {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+/* === PERSONALITY / CARD SORT === */
+.card-sort {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.card-sort-group {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 32px;
+  overflow: hidden;
+}
+.card-sort-group.is-me { border-color: var(--green); }
+.card-sort-group.is-not { border-color: var(--red); }
+.card-sort-group.is-torn { border-color: var(--blue); }
+
+.csg-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.csg-indicator {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 1rem;
+  flex-shrink: 0;
+}
+.is-me .csg-indicator { background: var(--green); color: var(--black); }
+.is-not .csg-indicator { background: var(--red); color: var(--white); }
+.is-torn .csg-indicator { background: var(--blue); color: var(--black); }
+
+.csg-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.csg-count {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-500);
+}
+
+.trait-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.trait {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: transform 0.15s;
+  cursor: default;
+}
+.trait:hover { transform: translateY(-2px); }
+.is-me .trait {
+  background: rgba(48, 209, 88, 0.1);
+  color: var(--green);
+  border: 1px solid rgba(48, 209, 88, 0.2);
+}
+.is-not .trait {
+  background: rgba(255, 59, 48, 0.08);
+  color: var(--red);
+  border: 1px solid rgba(255, 59, 48, 0.15);
+}
+.is-torn .trait {
+  background: rgba(100, 210, 255, 0.08);
+  color: var(--blue);
+  border: 1px solid rgba(100, 210, 255, 0.15);
+}
+
+/* === VISUAL DIRECTION === */
+.visual-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.color-row {
+  display: flex;
+  gap: 16px;
+  grid-column: 1 / -1;
+  margin-bottom: 8px;
+}
+.color-chip {
+  flex: 1;
+  border-radius: 12px;
+  padding: 24px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid var(--dark-border);
+}
+.color-chip.c-black { background: var(--black); border-color: var(--gray-700); }
+.color-chip.c-white { background: var(--white); }
+.color-chip.c-yellow { background: var(--yellow); }
+.color-chip-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 2px;
+}
+.color-chip.c-black .color-chip-name { color: var(--white); }
+.color-chip.c-white .color-chip-name { color: var(--black); }
+.color-chip.c-yellow .color-chip-name { color: var(--black); }
+.color-chip-hex {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+}
+.color-chip.c-black .color-chip-hex { color: var(--gray-500); }
+.color-chip.c-white .color-chip-hex { color: var(--gray-500); }
+.color-chip.c-yellow .color-chip-hex { color: rgba(0,0,0,0.5); }
+
+.visual-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.visual-card-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.type-sample-lg {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.type-sample-md {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-300);
+  margin-bottom: 4px;
+}
+.type-sample-sm {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  font-weight: 300;
+}
+.type-sample-mono {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--yellow);
+  margin-top: 12px;
+}
+
+.icon-sample {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.icon-bolt {
+  width: 48px; height: 48px;
+}
+.icon-desc {
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  line-height: 1.5;
+}
+
+.mood-tags {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
+}
+.mood-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(232, 255, 0, 0.06);
+  color: var(--yellow);
+  border: 1px solid rgba(232, 255, 0, 0.12);
+}
+
+/* === VOICE & TONE === */
+.voice-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.voice-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.voice-card.do { border-top: 3px solid var(--green); }
+.voice-card.dont { border-top: 3px solid var(--red); }
+
+.voice-card-title {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+.voice-list {
+  list-style: none; padding: 0;
+}
+.voice-list li {
+  font-size: 0.88rem;
+  color: var(--gray-300);
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.voice-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 13px;
+  width: 8px; height: 8px;
+  border-radius: 2px;
+}
+.voice-card.do .voice-list li::before { background: var(--green); }
+.voice-card.dont .voice-list li::before { background: var(--red); }
+
+.voice-example {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 28px;
+  grid-column: 1 / -1;
+}
+.voice-ex-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.voice-ex-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.voice-ex-text.wrong {
+  color: var(--gray-700);
+  text-decoration: line-through;
+}
+
+/* === AUDIENCE === */
+.audience-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.audience-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.audience-card.primary-aud { border-color: var(--yellow); }
+.aud-badge {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.primary-aud .aud-badge { background: var(--yellow); color: var(--black); }
+.secondary-aud .aud-badge { background: var(--dark-border); color: var(--gray-300); }
+
+.aud-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.aud-desc {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.aud-traits {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.aud-trait {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(232, 255, 0, 0.06);
+  color: var(--yellow);
+  border: 1px solid rgba(232, 255, 0, 0.12);
+}
+
+/* === APPLICATIONS === */
+.app-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.app-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s;
+}
+.app-card:hover { border-color: var(--gray-700); transform: translateY(-2px); }
+.app-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+  display: block;
+}
+.app-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.app-desc {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+/* === FOUNDER === */
+.founder-row {
+  margin-top: 48px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+.founder-info { flex: 1; }
+.founder-name {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.founder-role {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.founder-bio {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.7;
+}
+.founder-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+.founder-stat {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 16px;
+}
+.founder-stat-value {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+.founder-stat-label {
+  font-size: 0.7rem;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+/* === FOOTER === */
+.footer {
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid var(--dark-border);
+}
+.footer-brand {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.footer-sub {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .philosophy-grid,
+  .visual-grid,
+  .voice-grid,
+  .audience-grid { grid-template-columns: 1fr; }
+  .philosophy-card.highlight { grid-column: 1; }
+  .voice-example { grid-column: 1; }
+  .arch-details { grid-template-columns: 1fr; }
+  .app-grid { grid-template-columns: 1fr 1fr; }
+  .color-row { flex-direction: column; }
+  .founder-row { flex-direction: column; }
+  section { padding: 64px 0; }
+  .hero-meta { flex-direction: column; gap: 12px; align-items: center; }
+  .nav-links { display: none; }
+}
+@media (max-width: 480px) {
+  .app-grid { grid-template-columns: 1fr; }
+}
+
+/* === SCROLL ANIMATIONS === */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">Friction Podcast</div>
+    <div class="nav-links">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#personality">Personality</a>
+      <a href="#visual">Visual</a>
+      <a href="#voice">Voice</a>
+      <a href="#audience">Audience</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:0;padding-bottom:0;">
+  <div class="hero-glow"></div>
+  <!-- Lightning bolt bg -->
+  <svg class="hero-bolt" width="400" height="500" viewBox="0 0 400 500" fill="none">
+    <path d="M220 0 L100 220 L180 220 L140 500 L320 200 L230 200 Z" fill="var(--yellow)" opacity="0.5"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-parent">A Spark Collective Property</div>
+    <h1>Friction<span>Podcast</span></h1>
+    <p class="hero-tagline">Forward progression requires friction. You can't move without it.</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><strong>Domain</strong> &mdash; frictionpodcast.com</div>
+      <div class="hero-meta-item"><strong>Founded</strong> &mdash; 2026</div>
+      <div class="hero-meta-item"><strong>Base</strong> &mdash; Washington, DC</div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section id="philosophy">
+  <div class="container">
+    <div class="sec-label">01 / Philosophy</div>
+    <h2 class="sec-title">The Core Belief</h2>
+    <p class="sec-desc">Society tells you friction is bad. We say friction is the only reason anything moves at all.</p>
+
+    <div class="philosophy-grid">
+      <div class="philosophy-card highlight reveal">
+        <div class="phil-label">Manifesto</div>
+        <div class="phil-quote">"You can't have forward progression without friction. It's like trying to run on an ice rink with a pair of Jordans on. It's just not happening."</div>
+      </div>
+      <div class="philosophy-card reveal">
+        <div class="phil-label">The Problem</div>
+        <div class="phil-text">People treat friction like an enemy. They avoid it. Run from it. But every entrepreneur, creative, and builder knows the truth: the resistance is where the growth happens. Without friction, you're just sliding. You're not going anywhere.</div>
+      </div>
+      <div class="philosophy-card reveal">
+        <div class="phil-label">The Reframe</div>
+        <div class="phil-text">Friction is the grip that lets you push forward. We wouldn't be able to walk, sit, stand, or build anything without it. The podcast exists to normalize the struggle and show people that the hard parts aren't the problem. They're the proof you're actually moving.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND ARCHITECTURE -->
+<section id="architecture">
+  <div class="container">
+    <div class="sec-label">02 / Architecture</div>
+    <h2 class="sec-title">Brand Structure</h2>
+    <p class="sec-desc">Two layers. The parent holds the vision. The podcast delivers it.</p>
+
+    <div class="arch-diagram reveal">
+      <div class="arch-node parent">
+        <div class="arch-node-name">The Spark Collective</div>
+        <div class="arch-node-type">Parent Company / LLC</div>
+      </div>
+      <div class="arch-connector"></div>
+      <div class="arch-node primary">
+        <div class="arch-node-name">Friction Podcast</div>
+        <div class="arch-node-type">Primary Brand / Show</div>
+      </div>
+    </div>
+
+    <div class="arch-details reveal">
+      <div class="arch-detail">
+        <div class="arch-detail-label">Domain</div>
+        <div class="arch-detail-value">frictionpodcast.com</div>
+      </div>
+      <div class="arch-detail">
+        <div class="arch-detail-label">LLC Filing</div>
+        <div class="arch-detail-value">The Spark Collective LLC</div>
+      </div>
+      <div class="arch-detail">
+        <div class="arch-detail-label">Filing Service</div>
+        <div class="arch-detail-value">Rush Filings / LegalZoom</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND PERSONALITY -->
+<section id="personality">
+  <div class="container">
+    <div class="sec-label">03 / Personality</div>
+    <h2 class="sec-title">Card Sort Results</h2>
+    <p class="sec-desc">From the brand explosion exercise. These are the raw personality traits that define the Friction Podcast brand.</p>
+
+    <div class="card-sort">
+      <!-- I AM -->
+      <div class="card-sort-group is-me reveal">
+        <div class="csg-header">
+          <div class="csg-indicator">&gt;</div>
+          <div>
+            <div class="csg-title">I Am</div>
+            <div class="csg-count">The brand at its core</div>
+          </div>
+        </div>
+        <div class="trait-grid">
+          <div class="trait">Simple</div>
+          <div class="trait">Progressive</div>
+          <div class="trait">Casual</div>
+          <div class="trait">Sincere</div>
+          <div class="trait">Loving</div>
+          <div class="trait">Imaginative</div>
+          <div class="trait">Relaxed</div>
+          <div class="trait">Raw</div>
+          <div class="trait">Mysterious</div>
+          <div class="trait">Small</div>
+          <div class="trait">Exclusive</div>
+          <div class="trait">Artistic</div>
+          <div class="trait">Dynamic</div>
+          <div class="trait">Intense</div>
+          <div class="trait">Cutting Edge</div>
+          <div class="trait">Every Day</div>
+          <div class="trait">Curious</div>
+          <div class="trait">Certain</div>
+          <div class="trait">Optimistic</div>
+          <div class="trait">Opportunistic</div>
+        </div>
+      </div>
+
+      <!-- I AM NOT -->
+      <div class="card-sort-group is-not reveal">
+        <div class="csg-header">
+          <div class="csg-indicator">&times;</div>
+          <div>
+            <div class="csg-title">I Am Not</div>
+            <div class="csg-count">What the brand rejects</div>
+          </div>
+        </div>
+        <div class="trait-grid">
+          <div class="trait">Analytical</div>
+          <div class="trait">Serious</div>
+          <div class="trait">Technical</div>
+          <div class="trait">Ordinary</div>
+          <div class="trait">Refined</div>
+          <div class="trait">Glamorous</div>
+          <div class="trait">Formal</div>
+          <div class="trait">High-End</div>
+          <div class="trait">Pessimistic</div>
+          <div class="trait">Opinionated</div>
+        </div>
+      </div>
+
+      <!-- TORN -->
+      <div class="card-sort-group is-torn reveal">
+        <div class="csg-header">
+          <div class="csg-indicator">?</div>
+          <div>
+            <div class="csg-title">Torn</div>
+            <div class="csg-count">Traits with tension. Could lean either way.</div>
+          </div>
+        </div>
+        <div class="trait-grid">
+          <div class="trait">Vintage</div>
+          <div class="trait">Multifaceted</div>
+          <div class="trait">Graceful</div>
+          <div class="trait">Nostalgic</div>
+          <div class="trait">Practical</div>
+          <div class="trait">Disciplined</div>
+          <div class="trait">Steady</div>
+          <div class="trait">Conventional</div>
+          <div class="trait">Calm</div>
+          <div class="trait">Timeless</div>
+          <div class="trait">Wise</div>
+          <div class="trait">Idealistic</div>
+          <div class="trait">Trusted</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISUAL DIRECTION -->
+<section id="visual">
+  <div class="container">
+    <div class="sec-label">04 / Visual Direction</div>
+    <h2 class="sec-title">How It Looks</h2>
+    <p class="sec-desc">Black and white foundation. Vibrant yellow as the electric accent. Lightning bolt as the signature mark. Clean, modern, raw.</p>
+
+    <div class="visual-grid">
+      <!-- COLORS -->
+      <div class="color-row reveal">
+        <div class="color-chip c-black">
+          <div class="color-chip-name">Black</div>
+          <div class="color-chip-hex">#0A0A0A</div>
+        </div>
+        <div class="color-chip c-white">
+          <div class="color-chip-name">White</div>
+          <div class="color-chip-hex">#FAFAFA</div>
+        </div>
+        <div class="color-chip c-yellow">
+          <div class="color-chip-name">Electric Yellow</div>
+          <div class="color-chip-hex">#E8FF00</div>
+        </div>
+      </div>
+
+      <!-- TYPOGRAPHY -->
+      <div class="visual-card reveal">
+        <div class="visual-card-label">Typography</div>
+        <div class="type-sample-lg">Friction</div>
+        <div class="type-sample-md">Bold, tight tracking, uppercase headlines</div>
+        <div class="type-sample-sm">Clean body copy. Nothing decorative, nothing fragile.</div>
+        <div class="type-sample-mono">MONOSPACE FOR LABELS + METADATA</div>
+      </div>
+
+      <!-- ICONOGRAPHY -->
+      <div class="visual-card reveal">
+        <div class="visual-card-label">Iconography</div>
+        <div class="icon-sample">
+          <svg class="icon-bolt" viewBox="0 0 48 48" fill="none">
+            <path d="M28 4L12 26h10l-4 18L38 20H27L28 4z" fill="var(--yellow)" stroke="var(--yellow)" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <div class="icon-desc">The lightning bolt is the primary mark. It represents the spark of friction, the energy of forward motion, the moment something catches.</div>
+        </div>
+        <div class="mood-tags">
+          <span class="mood-tag">Lightning bolt</span>
+          <span class="mood-tag">Modern</span>
+          <span class="mood-tag">Clean</span>
+          <span class="mood-tag">Simple</span>
+          <span class="mood-tag">Not refined</span>
+          <span class="mood-tag">Bold weight</span>
+          <span class="mood-tag">Vibrant yellow</span>
+        </div>
+      </div>
+
+      <!-- MOOD -->
+      <div class="visual-card reveal" style="grid-column: 1 / -1;">
+        <div class="visual-card-label">Visual Mood</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+          <div style="background:var(--black);border:1px solid var(--dark-border);border-radius:8px;padding:20px;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:8px;">&#9889;</div>
+            <div style="font-size:0.75rem;color:var(--gray-300);font-weight:600;">Electric</div>
+            <div style="font-size:0.65rem;color:var(--gray-700);">High contrast, charged</div>
+          </div>
+          <div style="background:var(--black);border:1px solid var(--dark-border);border-radius:8px;padding:20px;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:8px;">&#x1F310;</div>
+            <div style="font-size:0.75rem;color:var(--gray-300);font-weight:600;">Raw</div>
+            <div style="font-size:0.65rem;color:var(--gray-700);">Unfiltered, direct</div>
+          </div>
+          <div style="background:var(--black);border:1px solid var(--dark-border);border-radius:8px;padding:20px;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:8px;">&#x25FC;</div>
+            <div style="font-size:0.75rem;color:var(--gray-300);font-weight:600;">Minimal</div>
+            <div style="font-size:0.65rem;color:var(--gray-700);">Nothing extra</div>
+          </div>
+          <div style="background:var(--black);border:1px solid var(--dark-border);border-radius:8px;padding:20px;text-align:center;">
+            <div style="font-size:2rem;margin-bottom:8px;">&#x1F525;</div>
+            <div style="font-size:0.75rem;color:var(--gray-300);font-weight:600;">Warm</div>
+            <div style="font-size:0.65rem;color:var(--gray-700);">Approachable, human</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICE & TONE -->
+<section id="voice">
+  <div class="container">
+    <div class="sec-label">05 / Voice & Tone</div>
+    <h2 class="sec-title">How It Speaks</h2>
+    <p class="sec-desc">Casual, direct, sincere. Sounds like a real conversation with someone who's been through it and came out better.</p>
+
+    <div class="voice-grid">
+      <div class="voice-card do reveal">
+        <div class="voice-card-title">The Brand Does</div>
+        <ul class="voice-list">
+          <li>Talk like a real person in a real conversation</li>
+          <li>Use everyday language, no corporate speak</li>
+          <li>Be direct and say what it means</li>
+          <li>Encourage without being preachy</li>
+          <li>Share real stories and real struggle</li>
+          <li>Make the complicated feel simple</li>
+          <li>Stay curious and ask the uncomfortable questions</li>
+        </ul>
+      </div>
+      <div class="voice-card dont reveal">
+        <div class="voice-card-title">The Brand Doesn't</div>
+        <ul class="voice-list">
+          <li>Use jargon, buzzwords, or business-bro energy</li>
+          <li>Lecture or talk down to the audience</li>
+          <li>Pretend the hard parts don't exist</li>
+          <li>Sound polished, formal, or corporate</li>
+          <li>Make sweeping statements without backing them up</li>
+          <li>Chase trends or mimic other podcast brands</li>
+          <li>Use negativity or pessimism as a hook</li>
+        </ul>
+      </div>
+      <div class="voice-example reveal">
+        <div class="voice-ex-label">Example: Intro Copy</div>
+        <div class="voice-ex-text wrong">Welcome to the Friction Podcast, your premier destination for entrepreneurial thought leadership and innovative mindset strategies.</div>
+        <div style="margin:12px 0;font-size:0.7rem;color:var(--gray-700);text-transform:uppercase;letter-spacing:0.1em;">vs.</div>
+        <div class="voice-ex-text">Look, nobody said building something would be easy. We're here because the hard parts are the parts that actually matter. That resistance you're feeling? That's friction. And friction is the only reason anything moves.</div>
+      </div>
+      <div class="voice-example reveal">
+        <div class="voice-ex-label">Example: Social Post</div>
+        <div class="voice-ex-text wrong">Unlock your potential by embracing challenges! Subscribe to our podcast for expert insights on overcoming obstacles. #Mindset #Entrepreneurship</div>
+        <div style="margin:12px 0;font-size:0.7rem;color:var(--gray-700);text-transform:uppercase;letter-spacing:0.1em;">vs.</div>
+        <div class="voice-ex-text">Everyone tells you to avoid friction. But have you ever tried to run on ice? You go nowhere. The grip is what moves you forward. New episode drops tomorrow.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TARGET AUDIENCE -->
+<section id="audience">
+  <div class="container">
+    <div class="sec-label">06 / Audience</div>
+    <h2 class="sec-title">Who This Is For</h2>
+    <p class="sec-desc">Builders who know the struggle is the point. Not people looking for shortcuts.</p>
+
+    <div class="audience-grid">
+      <div class="audience-card primary-aud reveal">
+        <div class="aud-badge">Primary</div>
+        <div class="aud-title">The 40-Something Builder</div>
+        <div class="aud-desc">Business owners in their early 40s who are deep in their entrepreneurial journey. They have experience, they have ideas, maybe even a patent or a product. But their branding doesn't match their ambition. They know what they don't know and they're ready to invest in getting it right.</div>
+        <div class="aud-traits">
+          <span class="aud-trait">Experienced</span>
+          <span class="aud-trait">Self-aware</span>
+          <span class="aud-trait">Ready to invest</span>
+          <span class="aud-trait">Open to expertise</span>
+        </div>
+      </div>
+      <div class="audience-card secondary-aud reveal">
+        <div class="aud-badge">Secondary</div>
+        <div class="aud-title">The Young Hustler</div>
+        <div class="aud-desc">20s and 30s, still figuring things out. Early-stage entrepreneurs, creatives, people with a different mindset who are trying to build something from nothing. They need guidance and they need to hear that the friction they're feeling isn't a sign to stop.</div>
+        <div class="aud-traits">
+          <span class="aud-trait">Hungry</span>
+          <span class="aud-trait">Early stage</span>
+          <span class="aud-trait">Budget conscious</span>
+          <span class="aud-trait">Mindset focused</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND APPLICATIONS -->
+<section id="applications">
+  <div class="container">
+    <div class="sec-label">07 / Applications</div>
+    <h2 class="sec-title">Where It Lives</h2>
+    <p class="sec-desc">The brand shows up across digital and social. Everything should feel like the same person is behind it.</p>
+
+    <div class="app-grid reveal">
+      <div class="app-card">
+        <div class="app-icon">&#x1F399;</div>
+        <div class="app-name">Podcast</div>
+        <div class="app-desc">The core product. Conversations about entrepreneurship, mindset, and the friction that fuels progress.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">&#x1F4F1;</div>
+        <div class="app-name">TikTok / Social</div>
+        <div class="app-desc">Live streams, clips, direct engagement. Where the audience grows. 1,500+ followers and climbing.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">&#x1F310;</div>
+        <div class="app-name">Website</div>
+        <div class="app-desc">frictionpodcast.com. Hub for episodes, the brand story, and a referral funnel to partner services.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">&#x26A1;</div>
+        <div class="app-name">Lightning Bolt Mark</div>
+        <div class="app-desc">The icon. Used as a favicon, social avatar, podcast cover accent, and watermark.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">&#x1F517;</div>
+        <div class="app-name">Partner Landing Page</div>
+        <div class="app-desc">A co-branded landing page with Workhorse for tracking referral traffic and funneling business.</div>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">&#x1F4E7;</div>
+        <div class="app-name">Email / Workspace</div>
+        <div class="app-desc">Google Workspace setup for professional email and collaboration tools.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder">
+  <div class="container">
+    <div class="sec-label">08 / Founder</div>
+    <h2 class="sec-title">The Person Behind It</h2>
+
+    <div class="founder-row reveal">
+      <div class="founder-info">
+        <div class="founder-name">Joon</div>
+        <div class="founder-role">Founder & Host / The Spark Collective</div>
+        <div class="founder-bio">Builder, thinker, and connector based in DC. Joon's philosophy is rooted in reframing friction as necessary fuel for forward motion. Through live streams and direct conversations with business owners, he's building a community that sees struggle as a feature, not a bug. Growing fast on social, with a clear vision to turn the Friction Podcast into a platform that connects entrepreneurs to the resources and branding they need to match their ambition.</div>
+        <div class="founder-stats">
+          <div class="founder-stat">
+            <div class="founder-stat-value">1,500+</div>
+            <div class="founder-stat-label">TikTok followers (and growing)</div>
+          </div>
+          <div class="founder-stat">
+            <div class="founder-stat-value">25K</div>
+            <div class="founder-stat-label">Impressions per cycle</div>
+          </div>
+          <div class="founder-stat">
+            <div class="founder-stat-value">50</div>
+            <div class="founder-stat-label">Peak live viewers</div>
+          </div>
+          <div class="founder-stat">
+            <div class="founder-stat-value">DC</div>
+            <div class="founder-stat-label">Based in Washington</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-brand">Friction Podcast</div>
+  <div class="footer-sub">Brand Foundation &mdash; The Spark Collective &mdash; 2026</div>
+</div>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+</body>
+</html>
