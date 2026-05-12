@@ -4,9 +4,8 @@
     {
       "name": "friction-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "--directory", "Brand/friction-podcast"],
-      "port": 8200,
-      "autoPort": true
+      "runtimeArgs": ["-m", "http.server", "8200", "--directory", "Brand/friction-podcast"],
+      "port": 8200
     }
   ]
 }
