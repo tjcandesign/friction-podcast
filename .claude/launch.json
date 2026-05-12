@@ -2,10 +2,11 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "brand-foundation",
+      "name": "friction-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8123", "--directory", "Brand/friction-podcast"],
-      "port": 8123
+      "runtimeArgs": ["-m", "http.server", "--directory", "Brand/friction-podcast"],
+      "port": 8200,
+      "autoPort": true
     }
   ]
 }
