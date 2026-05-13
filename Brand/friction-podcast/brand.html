@@ -984,6 +984,94 @@ section:last-of-type { border-bottom: none; }
   .sg-type-spec { text-align: left; }
 }
 
+/* === ASSETS === */
+.assets-grid {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.asset-group-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.asset-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.asset-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+.asset-card:hover { border-color: var(--gray-700); }
+.asset-preview {
+  aspect-ratio: 1;
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow: hidden;
+}
+.asset-preview.wide { aspect-ratio: 3/1; }
+.asset-preview.banner { aspect-ratio: 16/9; }
+.asset-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.asset-info {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.asset-meta {}
+.asset-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+.asset-spec {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.asset-dl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: var(--yellow-dim);
+  border: 1px solid rgba(232,255,0,0.15);
+  color: var(--yellow);
+  text-decoration: none;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.asset-dl:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .asset-row { grid-template-columns: 1fr; }
+}
+
 /* === SCROLL ANIMATIONS === */
 .reveal {
   opacity: 0;
