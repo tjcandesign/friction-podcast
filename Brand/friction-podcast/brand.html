@@ -817,6 +817,173 @@ section:last-of-type { border-bottom: none; }
   opacity: 0.4;
 }
 
+/* === STYLE GUIDE === */
+.sg-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.sg-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.sg-card.full { grid-column: 1 / -1; }
+.sg-card-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.sg-rule {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  align-items: flex-start;
+}
+.sg-rule:last-child { border-bottom: none; }
+.sg-rule-icon {
+  flex-shrink: 0;
+  width: 24px; height: 24px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+.sg-rule-icon.do { background: rgba(48, 209, 88, 0.15); color: var(--green); }
+.sg-rule-icon.dont { background: rgba(255, 59, 48, 0.12); color: var(--red); }
+.sg-rule-text {
+  font-size: 0.88rem;
+  color: var(--gray-300);
+  line-height: 1.5;
+}
+
+.sg-type-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.sg-type-row:last-child { border-bottom: none; }
+.sg-type-sample { color: var(--white); flex: 1; }
+.sg-type-spec {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--gray-500);
+  text-align: right;
+  flex-shrink: 0;
+  min-width: 160px;
+}
+
+.sg-swatch-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.sg-swatch {
+  flex: 1;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 64px;
+  position: relative;
+}
+.sg-swatch-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  position: absolute;
+  bottom: 8px; left: 12px;
+}
+.sg-swatch.on-black { background: var(--black); border: 1px solid var(--gray-700); }
+.sg-swatch.on-black .sg-swatch-label { color: var(--gray-500); }
+.sg-swatch.on-white { background: var(--white); }
+.sg-swatch.on-white .sg-swatch-label { color: var(--gray-500); }
+.sg-swatch.on-yellow { background: var(--yellow); }
+.sg-swatch.on-yellow .sg-swatch-label { color: rgba(0,0,0,0.5); }
+
+.sg-spacing-demo {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.sg-spacing-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.sg-spacing-visual {
+  background: var(--yellow-dim);
+  border: 1px dashed rgba(232,255,0,0.3);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sg-spacing-visual svg { opacity: 0.5; }
+.sg-spacing-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+.sg-spacing-val {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: var(--yellow);
+}
+
+.sg-logo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.sg-logo-variant {
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  position: relative;
+}
+.sg-logo-variant.on-dark {
+  background: var(--black);
+  border: 1px solid var(--dark-border);
+}
+.sg-logo-variant.on-light {
+  background: var(--white);
+}
+.sg-logo-variant.on-accent {
+  background: var(--yellow);
+}
+.sg-logo-tag {
+  position: absolute;
+  bottom: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.sg-logo-variant.on-dark .sg-logo-tag { color: var(--gray-700); }
+.sg-logo-variant.on-light .sg-logo-tag { color: var(--gray-500); }
+.sg-logo-variant.on-accent .sg-logo-tag { color: rgba(0,0,0,0.4); }
+
+@media (max-width: 768px) {
+  .sg-grid { grid-template-columns: 1fr; }
+  .sg-card.full { grid-column: 1; }
+  .sg-logo-grid { grid-template-columns: 1fr; }
+  .sg-type-row { flex-direction: column; gap: 4px; }
+  .sg-type-spec { text-align: left; }
+}
+
 /* === SCROLL ANIMATIONS === */
 .reveal {
   opacity: 0;
