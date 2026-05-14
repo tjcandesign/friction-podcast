@@ -63,6 +63,7 @@ export const articles: Article[] = [
     date: "December 2025",
     publishedDate: "December 2025",
     url: "/thinking/ai-assisted-brand-workshop",
+    image: "/images/articles/bokeh.png",
   },
   {
     title: "Designers Are Building Again",
