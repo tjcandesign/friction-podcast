@@ -370,7 +370,7 @@ function FounderSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">
-              TJ Cichecki
+              Theodore (TJ) Cichecki
             </h2>
             <div className="space-y-6">
               <p className="text-lg text-muted leading-relaxed">
