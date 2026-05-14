@@ -475,7 +475,7 @@ function PricingSection() {
               href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Paid%20Discovery"
               className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
             >
-              Get Started
+              Schedule Discovery Call
             </a>
           </div>
           <div className="bg-surface-raised rounded-lg p-8 flex flex-col">
