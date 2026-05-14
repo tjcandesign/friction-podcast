@@ -211,7 +211,7 @@ function ApproachSection() {
           The Approach
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 max-w-2xl">
-          An embedded operator, not a consultant.
+          An embedded AI operator, not a consultant.
         </h2>
         <p className="text-lg text-muted leading-relaxed max-w-2xl mb-16">
           There&apos;s a gap inside agencies right now that nobody has posted a
