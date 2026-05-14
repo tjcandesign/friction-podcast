@@ -96,6 +96,7 @@ export const articles: Article[] = [
     date: "January 2026",
     publishedDate: "January 2026",
     url: "/thinking/cross-industry-pattern-recognition",
+    image: "/images/articles/labyrinth.png",
   },
   {
     title: "The Clarity Problem Most Brands Don't Know They Have",

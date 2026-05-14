@@ -330,20 +330,29 @@ function ThinkingSection() {
             <a
               key={article.slug}
               href={article.url}
-              className="group border border-border rounded-lg p-8 hover:border-muted transition-colors"
+              className="group border border-border rounded-lg overflow-hidden hover:border-muted transition-colors"
             >
-              <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
-                {article.tag}
-              </p>
-              <h3 className="font-serif text-xl text-foreground mb-3 group-hover:text-accent transition-colors">
-                {article.title}
-              </h3>
-              <p className="text-base text-muted leading-relaxed">
-                {article.excerpt}
-              </p>
-              <p className="font-mono text-xs text-muted mt-4">
-                {article.date}
-              </p>
+              {article.image && (
+                <img
+                  src={article.image}
+                  alt=""
+                  className="w-full h-40 object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                />
+              )}
+              <div className="p-8">
+                <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
+                  {article.tag}
+                </p>
+                <h3 className="font-serif text-xl text-foreground mb-3 group-hover:text-accent transition-colors">
+                  {article.title}
+                </h3>
+                <p className="text-base text-muted leading-relaxed">
+                  {article.excerpt}
+                </p>
+                <p className="font-mono text-xs text-muted mt-4">
+                  {article.date}
+                </p>
+              </div>
             </a>
           ))}
         </div>
