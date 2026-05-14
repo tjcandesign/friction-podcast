@@ -43,13 +43,14 @@ body {
 
 .article-body p {
   color: var(--muted);
-  line-height: 1.8;
+  font-size: 1.0625rem;
+  line-height: 1.85;
   margin-bottom: 1.5em;
 }
 
 .article-body h2 {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--foreground);
   margin-top: 2.5em;
   margin-bottom: 0.75em;
@@ -57,7 +58,7 @@ body {
 
 .article-body h3 {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: var(--foreground);
   margin-top: 2em;
   margin-bottom: 0.5em;
