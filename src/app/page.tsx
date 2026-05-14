@@ -450,15 +450,15 @@ function PricingSection() {
           Engagement Options
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 max-w-2xl">
-          Three ways to work together.
+          Two ways to work together.
         </h2>
         <p className="text-muted leading-relaxed mb-16 max-w-2xl">
           Every engagement starts with figuring out where the real gaps are.
           From there, we decide together what the right depth looks like for
           your team.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border border-accent rounded-lg p-8 flex flex-col">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-surface rounded-lg p-8 flex flex-col">
             <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
               Paid Discovery
             </p>
@@ -479,7 +479,7 @@ function PricingSection() {
               Get Started
             </a>
           </div>
-          <div className="border border-accent rounded-lg p-8 flex flex-col">
+          <div className="bg-surface-raised rounded-lg p-8 flex flex-col">
             <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
               Monthly Engagement
             </p>
@@ -501,29 +501,6 @@ function PricingSection() {
               className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
             >
               Get Started
-            </a>
-          </div>
-          <div className="border border-accent rounded-lg p-8 flex flex-col">
-            <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
-              Fully Embedded
-            </p>
-            <p className="font-mono text-3xl text-foreground mb-6">
-              Let&apos;s Talk
-            </p>
-            <p className="text-base text-muted leading-relaxed mb-4 flex-1">
-              On-site at your office or mine, working directly alongside your
-              team. This is the deepest version of the engagement, where I&apos;m
-              operating inside the day-to-day and building capability in real
-              time with the people doing the work.
-            </p>
-            <p className="text-base text-muted leading-relaxed mb-8">
-              Three-month minimum. Up to two team members on-site.
-            </p>
-            <a
-              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Embedded%20Engagement"
-              className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
-            >
-              Get in Touch
             </a>
           </div>
         </div>
