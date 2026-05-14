@@ -372,56 +372,36 @@ function FounderSection() {
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-4">
           Meet the Founder
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-16 max-w-2xl">
-          Fifteen years of real work behind the practice.
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          <div className="space-y-6">
-            <p className="text-lg text-muted leading-relaxed">
-              I&apos;m TJ Cichecki, a designer and creative technologist in
-              Washington, DC. I&apos;ve spent fifteen years running Workhorse
-              Collective, a brand strategy and creative direction studio
-              that&apos;s worked with VC-backed startups, government agencies,
-              hospitality groups, nonprofits, cultural institutions, and a lot
-              of things in between.
-            </p>
-            <p className="text-muted leading-relaxed">
-              The range is the point. Working across that many contexts is how
-              you learn which operating patterns actually serve a purpose and
-              which ones are just category inertia nobody questioned. Some of
-              the best brand thinking I&apos;ve done came from applying a
-              pattern from one industry to a completely different one.
-            </p>
-            <p className="text-muted leading-relaxed">
-              For the last two years I&apos;ve been integrating AI into real
-              client work, not experimenting with it on the side. That started
-              with rebuilding my own brand workshop process, where
-              post-session processing time dropped by sixty percent, but the
-              more interesting result was that the workshops themselves got
-              better. When I wasn&apos;t scrambling to capture every statement,
-              I could actually pay attention to what people meant, not just
-              what they said.
-            </p>
-            <p className="text-muted leading-relaxed">
-              Two years doesn&apos;t sound like a long time until you remember
-              that the current AI wave is barely older than that. I&apos;ve
-              been building with these tools since they were useful enough to
-              matter, which means the practice isn&apos;t theoretical and
-              it&apos;s not catching up. This is how I work now, across every
-              project, every day. AI-native from the start.
-            </p>
-            <p className="text-muted leading-relaxed">
-              That&apos;s the version of AI integration I bring into client
-              engagements: the version where the work improves because the
-              human gets to be more present, not less.
-            </p>
-            <div className="pt-4 grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">
+              TJ Cichecki
+            </h2>
+            <div className="space-y-6">
+              <p className="text-lg text-muted leading-relaxed">
+                I&apos;m a designer and creative technologist in Washington, DC.
+                I&apos;ve spent the last fifteen years as Principal Designer at
+                Workhorse Collective, a creative branding agency.
+              </p>
+              <p className="text-muted leading-relaxed">
+                For the last two years I&apos;ve been deeply integrating AI into
+                real client work and delivering real results. I&apos;ve been
+                building with these tools since the first iteration and
+                they&apos;ve only gotten more powerful over time.
+              </p>
+              <p className="text-muted leading-relaxed">
+                I work to bring AI integration into client engagements and help
+                give agencies the tools to move faster and create far more than
+                ever before.
+              </p>
+            </div>
+            <div className="pt-8 grid grid-cols-3 gap-8">
               <div>
                 <p className="font-mono text-2xl text-foreground">15</p>
                 <p className="text-sm text-muted mt-1">Years in practice</p>
               </div>
               <div>
-                <p className="font-mono text-2xl text-foreground">2</p>
+                <p className="font-mono text-2xl text-foreground">2+</p>
                 <p className="text-sm text-muted mt-1">Years with AI</p>
               </div>
               <div>
@@ -430,14 +410,12 @@ function FounderSection() {
               </div>
             </div>
           </div>
-          <div className="space-y-4">
-            <div className="rounded-lg overflow-hidden">
-              <img
-                src="/images/tj-studio.jpg"
-                alt="TJ Cichecki at the Workhorse Collective studio in Washington, DC"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          <div className="rounded-lg overflow-hidden">
+            <img
+              src="/images/tj-studio.jpg"
+              alt="TJ Cichecki at the Workhorse Collective studio in Washington, DC"
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>
