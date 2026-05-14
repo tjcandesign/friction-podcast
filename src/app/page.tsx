@@ -501,7 +501,7 @@ export default function Home() {
         <HowItWorks />
         <ThinkingSection />
         <BackgroundSection />
-        <DiscoveryCTA />
+        <PricingSection />
       </main>
       <Footer />
     </>
