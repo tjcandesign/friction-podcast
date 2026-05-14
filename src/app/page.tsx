@@ -51,7 +51,7 @@ function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10" />
       </div>
-      <div className="relative max-w-5xl mx-auto px-6 pb-24 md:pb-32 pt-48">
+      <div className="relative max-w-6xl mx-auto px-6 pb-24 md:pb-32 pt-48">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-6">
           AI Readiness for Agencies
         </p>
