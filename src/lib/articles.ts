@@ -85,6 +85,7 @@ export const articles: Article[] = [
     date: "March 2026",
     publishedDate: "March 2026",
     url: "/thinking/ai-wont-replace-designers",
+    image: "/images/articles/circuits.png",
   },
   {
     title: "Cross-Industry Pattern Recognition as a Design Advantage",
