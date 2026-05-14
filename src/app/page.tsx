@@ -42,7 +42,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-end">
+    <section className="relative min-h-[90vh] flex items-center">
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/images/studio.jpg')" }}
