@@ -6,6 +6,7 @@ export type Article = {
   date: string;
   publishedDate: string;
   url: string;
+  image: string;
 };
 
 export const articles: Article[] = [
