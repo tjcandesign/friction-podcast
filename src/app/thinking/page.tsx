@@ -43,22 +43,31 @@ export default function ThinkingPage() {
               <a
                 key={article.slug}
                 href={article.url}
-                className="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 py-6 border-b border-border hover:bg-surface-raised -mx-4 px-4 rounded transition-colors"
+                className="group flex items-start gap-6 py-6 border-b border-border hover:bg-surface-raised -mx-4 px-4 rounded transition-colors"
               >
-                <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent shrink-0 md:w-32">
-                  {article.tag}
-                </p>
-                <div className="flex-1 min-w-0">
-                  <h2 className="font-serif text-2xl text-foreground group-hover:text-accent transition-colors mb-1">
-                    {article.title}
-                  </h2>
-                  <p className="text-base text-muted leading-relaxed">
-                    {article.excerpt}
+                {article.image && (
+                  <img
+                    src={article.image}
+                    alt=""
+                    className="w-24 h-24 md:w-32 md:h-32 object-cover rounded opacity-70 group-hover:opacity-100 transition-opacity shrink-0 hidden sm:block"
+                  />
+                )}
+                <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 flex-1 min-w-0">
+                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent shrink-0 md:w-32">
+                    {article.tag}
+                  </p>
+                  <div className="flex-1 min-w-0">
+                    <h2 className="font-serif text-2xl text-foreground group-hover:text-accent transition-colors mb-1">
+                      {article.title}
+                    </h2>
+                    <p className="text-base text-muted leading-relaxed">
+                      {article.excerpt}
+                    </p>
+                  </div>
+                  <p className="font-mono text-xs text-muted shrink-0">
+                    {article.date}
                   </p>
                 </div>
-                <p className="font-mono text-xs text-muted shrink-0">
-                  {article.date}
-                </p>
               </a>
             ))}
           </div>
