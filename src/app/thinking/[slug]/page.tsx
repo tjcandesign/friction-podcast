@@ -72,6 +72,15 @@ export default async function ArticlePage({
               By TJ Cichecki &middot; {article.publishedDate}
             </p>
           </header>
+          {article.image && (
+            <div className="mb-16 -mx-6 md:-mx-12 lg:-mx-24">
+              <img
+                src={article.image}
+                alt=""
+                className="w-full h-auto opacity-80"
+              />
+            </div>
+          )}
           <div
             className="article-body"
             dangerouslySetInnerHTML={{ __html: content }}
