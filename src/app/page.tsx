@@ -335,12 +335,7 @@ function BackgroundSection() {
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 max-w-2xl">
           Fifteen years of real work behind the practice.
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16 rounded-lg overflow-hidden">
-          <img
-            src="/images/studio.jpg"
-            alt="Workhorse Collective studio in Washington, DC"
-            className="w-full h-64 md:h-80 object-cover"
-          />
+        <div className="mb-16 rounded-lg overflow-hidden">
           <img
             src="/images/ai-panel.png"
             alt="New Horizons: The Future of Creative and AI panel discussion"
