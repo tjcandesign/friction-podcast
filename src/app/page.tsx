@@ -42,14 +42,22 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="py-32 md:py-44">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="relative min-h-[90vh] flex items-end">
+      <div className="absolute inset-0">
+        <img
+          src="/images/studio.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
+      </div>
+      <div className="relative max-w-5xl mx-auto px-6 pb-24 md:pb-32 pt-48">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-6">
           AI Readiness for Agencies
         </p>
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foreground leading-[1.1] mb-8 max-w-4xl">
-          Your agency bought AI tools. The work still runs the same way it did
-          two years ago.
+          The agencies that figure this out first will be the ones everyone
+          else is trying to catch.
         </h1>
         <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mb-12">
           Agentic Everything helps agencies and creative teams close the gap
@@ -67,7 +75,7 @@ function Hero() {
           </a>
           <a
             href="#thinking"
-            className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
+            className="inline-flex items-center justify-center text-sm font-medium border border-foreground/20 text-foreground px-6 py-3 rounded hover:border-foreground/40 transition-colors"
           >
             Read the Thinking
           </a>
