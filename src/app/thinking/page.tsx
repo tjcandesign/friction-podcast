@@ -1,7 +1,7 @@
 import { articles } from "@/lib/articles";
 
 export const metadata = {
-  title: "Thinking — Agentic Everything",
+  title: "Thinking | Agentic Everything",
   description:
     "Published writing on AI adoption, agency operations, workforce transformation, and the future of creative work.",
 };
