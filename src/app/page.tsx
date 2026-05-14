@@ -410,7 +410,7 @@ function PricingSection() {
           your team.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border border-border rounded-lg p-8 flex flex-col">
+          <div className="border border-accent rounded-lg p-8 flex flex-col">
             <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
               Paid Discovery
             </p>
