@@ -4,6 +4,7 @@ export type Article = {
   tag: string;
   excerpt: string;
   date: string;
+  publishedDate: string;
   url: string;
 };
 
