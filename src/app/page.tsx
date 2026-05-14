@@ -56,15 +56,13 @@ function Hero() {
           AI Readiness for Agencies
         </p>
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foreground leading-[1.1] mb-8 max-w-4xl">
-          The agencies that figure this out first will be the ones everyone
-          else is trying to catch.
+          We help agencies turn AI from a line item into a competitive
+          advantage.
         </h1>
         <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mb-12">
-          Agentic Everything helps agencies and creative teams close the gap
-          between buying AI subscriptions and actually changing how the work gets
-          done. Through embedded, retainer-based engagements, I work alongside
-          your leadership and your team to redesign operations and build the kind
-          of capability that shows up in the output.
+          Embedded AI consulting for agencies and creative teams. Executive
+          coaching, workforce enablement, and operational redesign through
+          retainer-based engagements that change how the work actually gets done.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a
@@ -80,6 +78,34 @@ function Hero() {
             Read the Thinking
           </a>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function GapSection() {
+  return (
+    <section className="py-24 md:py-32">
+      <div className="max-w-5xl mx-auto px-6">
+        <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-4">
+          The Opportunity
+        </p>
+        <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.15] mb-8 max-w-3xl">
+          The agencies that figure this out first will be the ones everyone
+          else is trying to catch.
+        </h2>
+        <p className="text-lg text-muted leading-relaxed max-w-2xl mb-6">
+          Most agencies bought the subscriptions and ran the lunch-and-learns,
+          but the work still runs the same way it did two years ago. The gap
+          between having AI tools and actually changing how the work gets done
+          is where this practice lives.
+        </p>
+        <p className="text-lg text-muted leading-relaxed max-w-2xl">
+          Closing that gap is a different project than handing everyone a
+          subscription. It requires someone embedded in the operation who can
+          work across leadership, team process, and the tools themselves, all
+          at the same time.
+        </p>
       </div>
     </section>
   );
