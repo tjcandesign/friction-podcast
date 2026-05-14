@@ -29,7 +29,7 @@ function Nav() {
             </a>
           </div>
           <a
-            href="#contact"
+            href="#pricing"
             className="text-sm font-medium bg-accent text-background px-4 py-2 rounded hover:bg-accent-hover transition-colors"
           >
             Book a Call
@@ -60,7 +60,7 @@ function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="#contact"
+            href="#pricing"
             className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
           >
             Book a Discovery Call
@@ -233,7 +233,7 @@ function HowItWorks() {
             fit.
           </p>
           <a
-            href="#contact"
+            href="#pricing"
             className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors mt-8"
           >
             Book a Discovery Call
