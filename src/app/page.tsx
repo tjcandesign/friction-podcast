@@ -578,7 +578,7 @@ export default function Home() {
         <ApproachSection />
         <HowItWorks />
         <ThinkingSection />
-        <BackgroundSection />
+        <FounderSection />
         <PricingSection />
       </main>
       <Footer />
