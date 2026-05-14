@@ -261,8 +261,6 @@ function ThinkingSection() {
             <a
               key={article.slug}
               href={article.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group border border-border rounded-lg p-8 hover:border-muted transition-colors"
             >
               <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
