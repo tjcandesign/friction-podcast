@@ -49,7 +49,7 @@ export default function ThinkingPage() {
                   {article.tag}
                 </p>
                 <div className="flex-1 min-w-0">
-                  <h2 className="font-serif text-xl text-foreground group-hover:text-accent transition-colors mb-1">
+                  <h2 className="font-serif text-2xl text-foreground group-hover:text-accent transition-colors mb-1">
                     {article.title}
                   </h2>
                   <p className="text-base text-muted leading-relaxed">
