@@ -50,18 +50,22 @@ function Hero() {
       />
       <div className="absolute inset-0 bg-background/75" />
       <div className="relative max-w-6xl mx-auto px-6 py-32 md:py-40">
-        <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-6">
-          AI Readiness for Agencies
+        <p className="font-mono text-sm md:text-base uppercase tracking-[0.15em] text-accent mb-6">
+          AI readiness for modern agencies.
         </p>
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-foreground leading-[1.1] mb-8 max-w-4xl">
-          We help agencies turn AI from a line item into a competitive
-          advantage.
-        </h1>
-        <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-2xl mb-12">
-          Embedded AI consulting for agencies and creative teams. Executive
-          coaching, workforce enablement, and operational redesign through
-          retainer-based engagements that change how the work actually gets done.
-        </p>
+        <RotatingHeadline
+          headlines={[
+            "We help agencies utilize AI to create competitive advantage at scale.",
+            "We help agencies turn AI into an unfair advantage.",
+            "We turn AI into momentum.",
+            "AI systems built for the agency at scale.",
+            "We help agencies operationalize AI.",
+            "We help agencies move faster with AI.",
+            "We build AI tooling that creates momentum.",
+            "Built for agencies that need an AI edge.",
+            "We turn AI experimentation into real advantage.",
+          ]}
+        />
         <a
           href="#approach"
           className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
