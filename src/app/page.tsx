@@ -55,15 +55,15 @@ function Hero() {
         </p>
         <RotatingHeadline
           headlines={[
-            "We help agencies utilize AI to create competitive advantage at scale.",
-            "We help agencies turn AI into an unfair advantage they can actually feel.",
-            "We turn AI experimentation into momentum your whole team can run on.",
-            "AI systems built for the way agencies actually work, at scale.",
-            "We help agencies operationalize AI across every layer of the work.",
-            "We help agencies move faster with AI without losing what makes them good.",
-            "We build AI tooling that creates momentum, not just efficiency.",
-            "Built for agencies that need an AI edge and a plan to keep it.",
-            "We turn AI experimentation into real advantage that compounds over time.",
+            "Your agency bought the AI tools. The work still runs the same way.",
+            "Your team is experimenting with AI. None of it has reached the P&L yet.",
+            "You know AI matters. You don't have a plan for what happens next.",
+            "Every agency is racing to adopt AI. Yours needs a system, not more subscriptions.",
+            "Your competitors are getting faster. Your AI strategy is still a slide deck.",
+            "AI made your team more productive individually. It hasn't changed the operation.",
+            "You've been talking about AI transformation for a year. The work hasn't moved.",
+            "Your agency needs AI to compound, not just accelerate what's already broken.",
+            "The gap between AI tools and AI advantage is where most agencies are stuck.",
           ]}
         />
         <a
