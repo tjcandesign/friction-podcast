@@ -61,20 +61,12 @@ function Hero() {
           coaching, workforce enablement, and operational redesign through
           retainer-based engagements that change how the work actually gets done.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <a
-            href="#pricing"
-            className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
-          >
-            See Pricing
-          </a>
-          <a
-            href="#thinking"
-            className="inline-flex items-center justify-center text-sm font-medium border border-foreground/20 text-foreground px-6 py-3 rounded hover:border-foreground/40 transition-colors"
-          >
-            Read the Thinking
-          </a>
-        </div>
+        <a
+          href="#approach"
+          className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
+        >
+          Explore Our Work
+        </a>
       </div>
     </section>
   );
