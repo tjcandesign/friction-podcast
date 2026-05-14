@@ -56,7 +56,7 @@ function Hero() {
           We help agencies turn AI from a line item into a competitive
           advantage.
         </h1>
-        <p className="text-lg md:text-xl text-muted leading-relaxed max-w-2xl mb-12">
+        <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-2xl mb-12">
           Embedded AI consulting for agencies and creative teams. Executive
           coaching, workforce enablement, and operational redesign through
           retainer-based engagements that change how the work actually gets done.
