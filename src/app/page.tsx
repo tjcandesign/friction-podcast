@@ -137,7 +137,7 @@ function ApproachSection() {
     {
       label: "Agentic Operator",
       description:
-        "Comes in from outside with a different set of references, builds the first version of the thing while everyone watches, and the capability spreads from there. Peer energy, not mandates.",
+        "Comes in from outside with a different set of references and builds the first version of the thing while everyone watches, so the capability spreads organically from there instead of being pushed down through mandates.",
     },
   ];
 
