@@ -43,14 +43,11 @@ function Nav() {
 function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-end">
-      <div className="absolute inset-0">
-        <img
-          src="/images/studio.jpg"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10" />
-      </div>
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: "url('/images/studio.jpg')" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10" />
       <div className="relative max-w-6xl mx-auto px-6 pb-24 md:pb-32 pt-48">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-6">
           AI Readiness for Agencies
