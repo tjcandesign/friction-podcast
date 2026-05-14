@@ -127,7 +127,7 @@ function ApproachSection() {
     {
       label: "Traditional Consultant",
       description:
-        "Shows up for a week, evaluates the operation from outside, writes a recommendations deck that goes into a shared drive. You pay for the audit and then figure out the implementation on your own.",
+        "Shows up for a week, evaluates the operation from outside, and leaves you with a recommendations deck in a shared drive that you're expected to implement on your own.",
     },
     {
       label: "Internal Hire",
