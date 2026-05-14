@@ -95,14 +95,23 @@ export default async function ArticlePage({
                 <a
                   key={a.slug}
                   href={a.url}
-                  className="group flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 py-4 border-b border-border hover:bg-surface-raised -mx-4 px-4 rounded transition-colors"
+                  className="group flex items-center gap-6 py-4 border-b border-border hover:bg-surface-raised -mx-4 px-4 rounded transition-colors"
                 >
-                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent shrink-0 md:w-28">
-                    {a.tag}
-                  </p>
-                  <p className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
-                    {a.title}
-                  </p>
+                  {a.image && (
+                    <img
+                      src={a.image}
+                      alt=""
+                      className="w-16 h-16 object-cover rounded opacity-70 group-hover:opacity-100 transition-opacity shrink-0"
+                    />
+                  )}
+                  <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 flex-1 min-w-0">
+                    <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent shrink-0 md:w-28">
+                      {a.tag}
+                    </p>
+                    <p className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                      {a.title}
+                    </p>
+                  </div>
                 </a>
               ))}
             </div>
