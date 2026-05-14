@@ -52,6 +52,7 @@ export const articles: Article[] = [
     date: "May 2026",
     publishedDate: "May 8, 2026",
     url: "/thinking/who-owns-the-workplace",
+    image: "/images/articles/columns.png",
   },
   {
     title: "Building an AI-Assisted Brand Workshop from Scratch",
