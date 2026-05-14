@@ -68,7 +68,7 @@ function Hero() {
         />
         <a
           href="#approach"
-          className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
+          className="mt-8 inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
         >
           Explore Our Work
         </a>
