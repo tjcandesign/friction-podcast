@@ -19,6 +19,7 @@ export const articles: Article[] = [
     date: "May 2026",
     publishedDate: "May 5, 2026",
     url: "/thinking/the-role-agencies-dont-have-yet",
+    image: "/images/articles/burst.png",
   },
   {
     title: "Your AI Strategy Is Pointed at the Wrong Thing",
