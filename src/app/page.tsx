@@ -438,13 +438,6 @@ function FounderSection() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="rounded-lg overflow-hidden">
-              <img
-                src="/images/ai-panel.png"
-                alt="Speaking on The Future of Creative and AI panel, 2024"
-                className="w-full h-auto object-cover"
-              />
-            </div>
           </div>
         </div>
       </div>
