@@ -119,7 +119,7 @@ function ProblemSection() {
               <h3 className="font-serif text-xl text-foreground mb-4">
                 {problem.heading}
               </h3>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-base text-muted leading-relaxed">
                 {problem.body}
               </p>
             </div>
@@ -172,7 +172,7 @@ function ApproachSection() {
               <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
                 {model.label}
               </p>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-base text-muted leading-relaxed">
                 {model.description}
               </p>
             </div>
@@ -277,7 +277,7 @@ function ThinkingSection() {
               <h3 className="font-serif text-lg text-foreground mb-3 group-hover:text-accent transition-colors">
                 {article.title}
               </h3>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-base text-muted leading-relaxed">
                 {article.excerpt}
               </p>
               <p className="font-mono text-xs text-muted mt-4">
@@ -396,7 +396,7 @@ function PricingSection() {
             <p className="font-mono text-3xl text-foreground mb-6">
               $2,500
             </p>
-            <p className="text-sm text-muted leading-relaxed mb-8 flex-1">
+            <p className="text-base text-muted leading-relaxed mb-8 flex-1">
               A structured diagnostic session to figure out where your team
               actually stands with AI, where the gaps are between what
               you&apos;ve bought and what you&apos;re using, and whether a
@@ -418,13 +418,13 @@ function PricingSection() {
               $10,000
             </p>
             <p className="font-mono text-xs text-muted mb-6">per month</p>
-            <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
+            <p className="text-base text-muted leading-relaxed mb-4 flex-1">
               The full practice: executive alignment, team enablement, and
               operational redesign working in parallel. I&apos;m embedded
               enough to understand the real dynamics and build capability that
               compounds over time.
             </p>
-            <p className="text-sm text-muted leading-relaxed mb-8">
+            <p className="text-base text-muted leading-relaxed mb-8">
               Month-to-month. No contracts, no minimums. Cancel anytime.
             </p>
             <a
@@ -441,13 +441,13 @@ function PricingSection() {
             <p className="font-mono text-3xl text-foreground mb-6">
               Let&apos;s Talk
             </p>
-            <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
+            <p className="text-base text-muted leading-relaxed mb-4 flex-1">
               On-site at your office or mine, working directly alongside your
               team. This is the deepest version of the engagement, where I&apos;m
               operating inside the day-to-day and building capability in real
               time with the people doing the work.
             </p>
-            <p className="text-sm text-muted leading-relaxed mb-8">
+            <p className="text-base text-muted leading-relaxed mb-8">
               Three-month minimum. Up to two team members on-site.
             </p>
             <a
