@@ -41,6 +41,7 @@ export const articles: Article[] = [
     date: "April 2026",
     publishedDate: "April 13, 2026",
     url: "/thinking/efficiency-for-what",
+    image: "/images/articles/efficiency.png",
   },
   {
     title: "Who Owns the Workplace?",
