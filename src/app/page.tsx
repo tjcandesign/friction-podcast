@@ -473,7 +473,7 @@ function PricingSection() {
               Month-to-month. No contracts, no minimums. Cancel anytime.
             </p>
             <a
-              href="mailto:tj@wrkhrs.co?subject=Agentic_Everything%20Monthly%20Engagement"
+              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Monthly%20Engagement"
               className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
             >
               Get Started
