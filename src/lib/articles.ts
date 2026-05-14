@@ -30,6 +30,7 @@ export const articles: Article[] = [
     date: "April 2026",
     publishedDate: "April 20, 2026",
     url: "/thinking/ai-strategy-wrong-thing",
+    image: "/images/articles/halftone.png",
   },
   {
     title: "Efficiency For What?",
