@@ -530,6 +530,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <GapSection />
         <ProblemSection />
         <ApproachSection />
         <HowItWorks />
