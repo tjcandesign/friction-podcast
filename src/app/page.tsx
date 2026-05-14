@@ -449,7 +449,7 @@ function PricingSection() {
               of the work, not a sales pitch.
             </p>
             <a
-              href="mailto:tj@wrkhrs.co?subject=Agentic_Everything%20Paid%20Discovery"
+              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Paid%20Discovery"
               className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
             >
               Schedule Discovery Call
