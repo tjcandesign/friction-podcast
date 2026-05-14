@@ -1,4 +1,5 @@
 import { articles } from "@/lib/articles";
+import { RotatingHeadline } from "@/components/rotating-headline";
 
 function Nav() {
   return (
