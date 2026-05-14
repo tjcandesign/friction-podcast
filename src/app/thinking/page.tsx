@@ -52,7 +52,7 @@ export default function ThinkingPage() {
                   <h2 className="font-serif text-xl text-foreground group-hover:text-accent transition-colors mb-1">
                     {article.title}
                   </h2>
-                  <p className="text-sm text-muted leading-relaxed">
+                  <p className="text-base text-muted leading-relaxed">
                     {article.excerpt}
                   </p>
                 </div>
