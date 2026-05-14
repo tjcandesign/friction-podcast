@@ -392,6 +392,14 @@ function FounderSection() {
               what they said.
             </p>
             <p className="text-muted leading-relaxed">
+              Two years doesn&apos;t sound like a long time until you remember
+              that the current AI wave is barely older than that. I&apos;ve
+              been building with these tools since they were useful enough to
+              matter, which means the practice isn&apos;t theoretical and
+              it&apos;s not catching up. This is how I work now, across every
+              project, every day. AI-native from the start.
+            </p>
+            <p className="text-muted leading-relaxed">
               That&apos;s the version of AI integration I bring into client
               engagements: the version where the work improves because the
               human gets to be more present, not less.
