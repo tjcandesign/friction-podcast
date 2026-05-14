@@ -354,68 +354,87 @@ function ThinkingSection() {
   );
 }
 
-function BackgroundSection() {
+function FounderSection() {
   return (
-    <section id="background" className="py-24 md:py-32 bg-surface">
-      <div className="max-w-5xl mx-auto px-6">
+    <section id="founder" className="py-24 md:py-32 bg-surface">
+      <div className="max-w-6xl mx-auto px-6">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-4">
-          Background
+          Meet the Founder
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 max-w-2xl">
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-16 max-w-2xl">
           Fifteen years of real work behind the practice.
         </h2>
-        <div className="mb-16 rounded-lg overflow-hidden">
-          <img
-            src="/images/ai-panel.png"
-            alt="New Horizons: The Future of Creative and AI panel discussion"
-            className="w-full h-64 md:h-80 object-cover"
-          />
-        </div>
-        <div className="max-w-2xl space-y-6">
-          <p className="text-muted leading-relaxed">
-            I&apos;m TJ Cichecki, a designer and creative technologist in
-            Washington, DC. I&apos;ve spent fifteen years running Workhorse
-            Collective, a brand strategy and creative direction studio that&apos;s
-            worked with VC-backed startups, government agencies, hospitality
-            groups, nonprofits, cultural institutions, and a lot of things in
-            between. The range is the point. Working across that many contexts
-            is how you learn which operating patterns actually serve a purpose
-            and which ones are just category inertia nobody questioned.
-          </p>
-          <p className="text-muted leading-relaxed">
-            For the last two years I&apos;ve been integrating AI into real client
-            work, not experimenting with it on the side. That started with
-            rebuilding my own brand workshop process, where post-session
-            processing time dropped by sixty percent, but the more interesting
-            result was that the workshops themselves got better. When I
-            wasn&apos;t scrambling to capture every statement, I could actually
-            pay attention to what people meant, not just what they said. From
-            there it moved into redesigning how creative teams operate day to
-            day, and along the way I started writing publicly about what was
-            working and what wasn&apos;t.
-          </p>
-          <p className="text-muted leading-relaxed">
-            That&apos;s the version of AI integration I bring into client
-            engagements: the version where the work improves because the human
-            gets to be more present, not less. The fifteen years of brand
-            strategy behind it is what makes the difference. I&apos;ve got a
-            pretty good read now on where these tools actually create leverage
-            versus where they just speed up generic output, and the determining
-            factor is almost always who&apos;s directing them.
-          </p>
-        </div>
-        <div className="mt-12 grid grid-cols-3 gap-8">
-          <div>
-            <p className="font-mono text-2xl text-foreground">15</p>
-            <p className="text-sm text-muted mt-1">Years in practice</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="space-y-6">
+            <p className="text-lg text-muted leading-relaxed">
+              I&apos;m TJ Cichecki, a designer and creative technologist in
+              Washington, DC. I&apos;ve spent fifteen years running Workhorse
+              Collective, a brand strategy and creative direction studio
+              that&apos;s worked with VC-backed startups, government agencies,
+              hospitality groups, nonprofits, cultural institutions, and a lot
+              of things in between.
+            </p>
+            <p className="text-muted leading-relaxed">
+              The range is the point. Working across that many contexts is how
+              you learn which operating patterns actually serve a purpose and
+              which ones are just category inertia nobody questioned. Some of
+              the best brand thinking I&apos;ve done came from applying a
+              pattern from one industry to a completely different one.
+            </p>
+            <p className="text-muted leading-relaxed">
+              For the last two years I&apos;ve been integrating AI into real
+              client work, not experimenting with it on the side. That started
+              with rebuilding my own brand workshop process, where
+              post-session processing time dropped by sixty percent, but the
+              more interesting result was that the workshops themselves got
+              better. When I wasn&apos;t scrambling to capture every statement,
+              I could actually pay attention to what people meant, not just
+              what they said.
+            </p>
+            <p className="text-muted leading-relaxed">
+              That&apos;s the version of AI integration I bring into client
+              engagements: the version where the work improves because the
+              human gets to be more present, not less.
+            </p>
+            <div className="pt-4 grid grid-cols-3 gap-8">
+              <div>
+                <p className="font-mono text-2xl text-foreground">15</p>
+                <p className="text-sm text-muted mt-1">Years in practice</p>
+              </div>
+              <div>
+                <p className="font-mono text-2xl text-foreground">2</p>
+                <p className="text-sm text-muted mt-1">Years with AI</p>
+              </div>
+              <div>
+                <p className="font-mono text-2xl text-foreground">DC</p>
+                <p className="text-sm text-muted mt-1">Washington</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <p className="font-mono text-2xl text-foreground">2</p>
-            <p className="text-sm text-muted mt-1">Years building with AI</p>
-          </div>
-          <div>
-            <p className="font-mono text-2xl text-foreground">DC</p>
-            <p className="text-sm text-muted mt-1">Based in Washington</p>
+          <div className="space-y-4">
+            <div className="rounded-lg overflow-hidden">
+              <img
+                src="/images/tj-studio.jpg"
+                alt="TJ Cichecki at the Workhorse Collective studio in Washington, DC"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="rounded-lg overflow-hidden">
+                <img
+                  src="/images/ai-panel.png"
+                  alt="Speaking on The Future of Creative and AI panel"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <img
+                  src="/images/tj-dcdw.png"
+                  alt="At AIGA DC Design Week"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
