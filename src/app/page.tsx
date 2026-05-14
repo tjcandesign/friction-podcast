@@ -370,11 +370,11 @@ function FounderSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8">
-              Theodore (TJ) Cichecki
+              Designer &amp; Creative Technologist
             </h2>
             <div className="space-y-6">
               <p className="text-lg text-muted leading-relaxed">
-                I&apos;m a designer and creative technologist in Washington, DC.
+                I&apos;m TJ Cichecki, I live and work in Washington, DC.
                 I&apos;ve spent the last fifteen years as Principal Designer at
                 Workhorse Collective, a creative branding agency.
               </p>
