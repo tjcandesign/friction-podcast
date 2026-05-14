@@ -274,7 +274,7 @@ function ThinkingSection() {
               <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
                 {article.tag}
               </p>
-              <h3 className="font-serif text-lg text-foreground mb-3 group-hover:text-accent transition-colors">
+              <h3 className="font-serif text-xl text-foreground mb-3 group-hover:text-accent transition-colors">
                 {article.title}
               </h3>
               <p className="text-base text-muted leading-relaxed">
