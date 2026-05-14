@@ -107,5 +107,6 @@ export const articles: Article[] = [
     date: "February 2026",
     publishedDate: "February 2026",
     url: "/thinking/clarity-problem",
+    image: "/images/articles/light.png",
   },
 ];
