@@ -74,6 +74,7 @@ export const articles: Article[] = [
     date: "April 2026",
     publishedDate: "April 6, 2026",
     url: "/thinking/designers-are-building-again",
+    image: "/images/articles/dissolving-lines.png",
   },
   {
     title: "Why AI Won't Replace Designers",
