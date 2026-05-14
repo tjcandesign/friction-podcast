@@ -32,7 +32,7 @@ function Nav() {
             href="#pricing"
             className="text-sm font-medium bg-accent text-background px-4 py-2 rounded hover:bg-accent-hover transition-colors"
           >
-            Book a Call
+            See Pricing
           </a>
         </div>
       </div>
