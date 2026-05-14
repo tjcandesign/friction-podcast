@@ -543,24 +543,107 @@ function PricingSection() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border py-12">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p className="font-mono text-xs text-muted">
-          &copy; 2026 Agentic Everything. Washington, DC.
-        </p>
-        <div className="flex gap-6">
-          <a
-            href="/thinking"
-            className="text-xs text-muted hover:text-foreground transition-colors"
-          >
-            Thinking
-          </a>
-          <a
-            href="mailto:tj@wrkhrs.co"
-            className="text-xs text-muted hover:text-foreground transition-colors"
-          >
-            Contact
-          </a>
+    <footer className="border-t border-border pt-16 pb-12">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div className="md:col-span-2">
+            <p className="font-mono text-sm tracking-wide text-foreground mb-4">
+              AgenticEverything
+            </p>
+            <p className="text-muted leading-relaxed max-w-sm mb-6">
+              AI readiness consulting for agencies and creative teams.
+              Embedded engagements that change how the work actually gets done.
+            </p>
+            <a
+              href="mailto:tj@wrkhrs.co"
+              className="text-accent hover:text-accent-hover transition-colors"
+            >
+              tj@wrkhrs.co
+            </a>
+          </div>
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground mb-4">
+              Navigate
+            </p>
+            <div className="space-y-3">
+              <a
+                href="#approach"
+                className="block text-sm text-muted hover:text-foreground transition-colors"
+              >
+                Approach
+              </a>
+              <a
+                href="#how-it-works"
+                className="block text-sm text-muted hover:text-foreground transition-colors"
+              >
+                How It Works
+              </a>
+              <a
+                href="#thinking"
+                className="block text-sm text-muted hover:text-foreground transition-colors"
+              >
+                Thinking
+              </a>
+              <a
+                href="#founder"
+                className="block text-sm text-muted hover:text-foreground transition-colors"
+              >
+                Meet the Founder
+              </a>
+              <a
+                href="#pricing"
+                className="block text-sm text-muted hover:text-foreground transition-colors"
+              >
+                Pricing
+              </a>
+            </div>
+          </div>
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground mb-4">
+              Studio
+            </p>
+            <div className="space-y-3 text-sm text-muted">
+              <p>Workhorse Collective</p>
+              <p>
+                320 3rd St NE, Rear
+                <br />
+                Washington, DC
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=320+3rd+St+NE+Washington+DC"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-accent hover:text-accent-hover transition-colors mt-1"
+              >
+                Get directions &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="font-mono text-xs text-muted">
+            &copy; 2026 Agentic Everything. Washington, DC.
+          </p>
+          <p className="text-xs text-muted">
+            A practice by{" "}
+            <a
+              href="https://tjcichecki.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors"
+            >
+              TJ Cichecki
+            </a>
+            {" / "}
+            <a
+              href="https://wrkhrs.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors"
+            >
+              Workhorse Collective
+            </a>
+          </p>
         </div>
       </div>
     </footer>
