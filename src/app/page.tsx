@@ -108,6 +108,20 @@ function GapSection() {
   );
 }
 
+function PanelPhoto() {
+  return (
+    <section className="py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <img
+          src="/images/ai-panel.png"
+          alt="TJ Cichecki speaking on The Future of Creative and AI panel, 2024"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
+    </section>
+  );
+}
+
 function ProblemSection() {
   const problems = [
     {
