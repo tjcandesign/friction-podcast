@@ -34,9 +34,9 @@ export default function ThinkingPage() {
             Writing about AI, agencies, and how work actually changes.
           </h1>
           <p className="text-lg text-muted leading-relaxed max-w-2xl mb-16">
-            These articles are the intellectual foundation of this practice.
-            They come from two years of integrating AI into real client work and
-            fifteen years of watching how creative teams operate.
+            These are the ideas behind the practice, all of them grounded in
+            two years of integrating AI into real client work and fifteen years
+            of watching how creative teams actually operate.
           </p>
           <div className="space-y-1">
             {articles.map((article) => (
