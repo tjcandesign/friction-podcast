@@ -6,7 +6,7 @@ function Nav() {
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="/" className="font-mono text-sm tracking-wide text-foreground">
-          AgenticEverything
+          Agentic_Everything
         </a>
         <div className="flex items-center gap-8">
           <div className="hidden md:flex items-center gap-8">
@@ -449,7 +449,7 @@ function PricingSection() {
               of the work, not a sales pitch.
             </p>
             <a
-              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Paid%20Discovery"
+              href="mailto:tj@wrkhrs.co?subject=Agentic_Everything%20Paid%20Discovery"
               className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
             >
               Schedule Discovery Call
@@ -473,7 +473,7 @@ function PricingSection() {
               Month-to-month. No contracts, no minimums. Cancel anytime.
             </p>
             <a
-              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Monthly%20Engagement"
+              href="mailto:tj@wrkhrs.co?subject=Agentic_Everything%20Monthly%20Engagement"
               className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
             >
               Get Started
@@ -501,7 +501,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <p className="font-mono text-sm tracking-wide text-foreground mb-4">
-              AgenticEverything
+              Agentic_Everything
             </p>
             <p className="text-muted leading-relaxed max-w-sm mb-6">
               AI readiness consulting for agencies and creative teams.
