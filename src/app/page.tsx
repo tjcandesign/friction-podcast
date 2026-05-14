@@ -63,7 +63,7 @@ function Hero() {
             href="#pricing"
             className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
           >
-            Book a Discovery Call
+            See Pricing
           </a>
           <a
             href="#thinking"
@@ -236,7 +236,7 @@ function HowItWorks() {
             href="#pricing"
             className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors mt-8"
           >
-            Book a Discovery Call
+            See Pricing
           </a>
         </div>
       </div>
