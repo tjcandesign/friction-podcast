@@ -299,46 +299,57 @@ function BackgroundSection() {
           Background
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 max-w-2xl">
-          Fifteen years of building across industries.
+          Fifteen years of real work behind the practice.
         </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16 rounded-lg overflow-hidden">
+          <img
+            src="/images/studio.jpg"
+            alt="Workhorse Collective studio in Washington, DC"
+            className="w-full h-64 md:h-80 object-cover"
+          />
+          <img
+            src="/images/ai-panel.png"
+            alt="New Horizons: The Future of Creative and AI panel discussion"
+            className="w-full h-64 md:h-80 object-cover"
+          />
+        </div>
         <div className="max-w-2xl space-y-6">
           <p className="text-muted leading-relaxed">
-            I&apos;m TJ Cichecki. I&apos;ve spent fifteen years running
-            Workhorse Collective, a brand strategy and creative direction studio
-            in Washington, DC, working across government, tech, hospitality,
-            nonprofits, and startups. For the last two years I&apos;ve been
-            integrating AI into real client work. That started with rebuilding my
-            own brand workshop process, then moved into redesigning how creative
-            teams operate day to day, and along the way I started writing
-            publicly about what was working and what wasn&apos;t.
+            I&apos;m TJ Cichecki, a designer and creative technologist in
+            Washington, DC. I&apos;ve spent fifteen years running Workhorse
+            Collective, a brand strategy and creative direction studio that&apos;s
+            worked with VC-backed startups, government agencies, hospitality
+            groups, nonprofits, cultural institutions, and a lot of things in
+            between. The range is the point. Working across that many contexts
+            is how you learn which operating patterns actually serve a purpose
+            and which ones are just category inertia nobody questioned.
           </p>
           <p className="text-muted leading-relaxed">
-            The cross-industry range matters for this kind of work. Fifteen years
-            across that many contexts means I&apos;ve seen which operating
-            patterns actually serve a purpose and which ones are just category
-            inertia that nobody questioned because everyone in the industry does
-            it the same way. That outside perspective is the whole point of an
-            embedded engagement.
-          </p>
-          <p className="text-muted leading-relaxed">
-            When I rebuilt my own workshop process with AI tools, post-session
+            For the last two years I&apos;ve been integrating AI into real client
+            work, not experimenting with it on the side. That started with
+            rebuilding my own brand workshop process, where post-session
             processing time dropped by sixty percent, but the more interesting
             result was that the workshops themselves got better. When I
             wasn&apos;t scrambling to capture every statement, I could actually
-            pay attention to what people meant, not just what they said.
+            pay attention to what people meant, not just what they said. From
+            there it moved into redesigning how creative teams operate day to
+            day, and along the way I started writing publicly about what was
+            working and what wasn&apos;t.
+          </p>
+          <p className="text-muted leading-relaxed">
             That&apos;s the version of AI integration I bring into client
             engagements: the version where the work improves because the human
-            gets to be more present, not less.
+            gets to be more present, not less. The fifteen years of brand
+            strategy behind it is what makes the difference. I&apos;ve got a
+            pretty good read now on where these tools actually create leverage
+            versus where they just speed up generic output, and the determining
+            factor is almost always who&apos;s directing them.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-12 grid grid-cols-3 gap-8">
           <div>
             <p className="font-mono text-2xl text-foreground">15</p>
             <p className="text-sm text-muted mt-1">Years in practice</p>
-          </div>
-          <div>
-            <p className="font-mono text-2xl text-foreground">6</p>
-            <p className="text-sm text-muted mt-1">Industries deep</p>
           </div>
           <div>
             <p className="font-mono text-2xl text-foreground">2</p>
