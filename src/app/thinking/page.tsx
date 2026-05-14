@@ -43,8 +43,6 @@ export default function ThinkingPage() {
               <a
                 key={article.slug}
                 href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 py-6 border-b border-border hover:bg-surface-raised -mx-4 px-4 rounded transition-colors"
               >
                 <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent shrink-0 md:w-32">
