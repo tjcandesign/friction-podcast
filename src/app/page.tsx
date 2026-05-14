@@ -455,7 +455,7 @@ function PricingSection() {
               Get Started
             </a>
           </div>
-          <div className="border border-border rounded-lg p-8 flex flex-col">
+          <div className="border border-accent rounded-lg p-8 flex flex-col">
             <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
               Fully Embedded
             </p>
