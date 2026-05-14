@@ -49,7 +49,7 @@ function Hero() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/10" />
       </div>
       <div className="relative max-w-5xl mx-auto px-6 pb-24 md:pb-32 pt-48">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-6">
