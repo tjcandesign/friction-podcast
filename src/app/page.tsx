@@ -636,6 +636,7 @@ export default function Home() {
       <main>
         <Hero />
         <GapSection />
+        <PanelPhoto />
         <ProblemSection />
         <ApproachSection />
         <HowItWorks />
