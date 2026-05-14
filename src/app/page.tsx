@@ -271,7 +271,7 @@ function HowItWorks() {
 
   return (
     <section id="how-it-works" className="py-24 md:py-32 bg-surface">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-4">
           How It Works
         </p>
