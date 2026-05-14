@@ -116,7 +116,7 @@ function ProblemSection() {
               key={problem.heading}
               className="bg-surface-raised border border-border rounded-lg p-8"
             >
-              <h3 className="font-serif text-xl text-foreground mb-4">
+              <h3 className="font-serif text-2xl text-foreground mb-4">
                 {problem.heading}
               </h3>
               <p className="text-base text-muted leading-relaxed">
