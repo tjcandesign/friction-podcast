@@ -365,30 +365,93 @@ function BackgroundSection() {
   );
 }
 
-function DiscoveryCTA() {
+function PricingSection() {
   return (
-    <section id="contact" className="py-24 md:py-32">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+    <section id="pricing" className="py-24 md:py-32">
+      <div className="max-w-6xl mx-auto px-6">
         <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-4">
-          Start Here
+          Engagement Options
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-          Let&apos;s talk about what&apos;s in the way.
+        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6 max-w-2xl">
+          Three ways to work together.
         </h2>
-        <p className="text-muted leading-relaxed mb-10 max-w-xl mx-auto">
-          If your agency has the AI subscriptions but the work still looks the
-          same as last year, that&apos;s the gap this practice exists to close.
-          Book a 30-minute discovery call and we&apos;ll figure out whether an
-          embedded engagement makes sense for where your team is right now.
+        <p className="text-muted leading-relaxed mb-16 max-w-2xl">
+          Every engagement starts with figuring out where the real gaps are.
+          From there, we decide together what the right depth looks like for
+          your team.
         </p>
-        <a
-          href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Discovery%20Call"
-          className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-8 py-4 rounded hover:bg-accent-hover transition-colors"
-        >
-          Book a Discovery Call
-        </a>
-        <p className="text-sm text-muted mt-6">
-          Or email directly:{" "}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="border border-border rounded-lg p-8 flex flex-col">
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
+              Paid Discovery
+            </p>
+            <p className="font-mono text-3xl text-foreground mb-6">
+              $2,500
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-8 flex-1">
+              A structured diagnostic session to figure out where your team
+              actually stands with AI, where the gaps are between what
+              you&apos;ve bought and what you&apos;re using, and whether a
+              longer engagement makes sense. You walk away with a clear picture
+              of the work, not a sales pitch.
+            </p>
+            <a
+              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Paid%20Discovery"
+              className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+          <div className="border border-accent rounded-lg p-8 flex flex-col">
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
+              Monthly Engagement
+            </p>
+            <p className="font-mono text-3xl text-foreground mb-1">
+              $10,000
+            </p>
+            <p className="font-mono text-xs text-muted mb-6">per month</p>
+            <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
+              The full practice: executive alignment, team enablement, and
+              operational redesign working in parallel. I&apos;m embedded
+              enough to understand the real dynamics and build capability that
+              compounds over time.
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-8">
+              Month-to-month. No contracts, no minimums. Cancel anytime.
+            </p>
+            <a
+              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Monthly%20Engagement"
+              className="inline-flex items-center justify-center text-sm font-medium bg-accent text-background px-6 py-3 rounded hover:bg-accent-hover transition-colors"
+            >
+              Get Started
+            </a>
+          </div>
+          <div className="border border-border rounded-lg p-8 flex flex-col">
+            <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
+              Fully Embedded
+            </p>
+            <p className="font-mono text-3xl text-foreground mb-6">
+              Let&apos;s Talk
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-4 flex-1">
+              On-site at your office or mine, working directly alongside your
+              team. This is the deepest version of the engagement, where I&apos;m
+              operating inside the day-to-day and building capability in real
+              time with the people doing the work.
+            </p>
+            <p className="text-sm text-muted leading-relaxed mb-8">
+              Three-month minimum. Up to two team members on-site.
+            </p>
+            <a
+              href="mailto:tj@wrkhrs.co?subject=AgenticEverything%20Embedded%20Engagement"
+              className="inline-flex items-center justify-center text-sm font-medium border border-border text-foreground px-6 py-3 rounded hover:border-muted transition-colors"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <p className="text-sm text-muted mt-12 text-center">
+          Questions? Email directly:{" "}
           <a
             href="mailto:tj@wrkhrs.co"
             className="text-foreground hover:text-accent transition-colors"
