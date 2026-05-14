@@ -5,8 +5,8 @@ function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="/" className="font-mono text-sm tracking-wide text-foreground">
-          Agentic_Everything
+        <a href="/" className="font-mono text-sm tracking-wide uppercase text-foreground">
+          Agentic_<span className="text-accent">Everything</span>
         </a>
         <div className="flex items-center gap-8">
           <div className="hidden md:flex items-center gap-8">
