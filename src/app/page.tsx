@@ -588,7 +588,6 @@ function Footer() {
               Studio
             </p>
             <div className="space-y-3 text-sm text-muted">
-              <p>Workhorse Collective</p>
               <p>
                 320 3rd St NE, Rear
                 <br />
